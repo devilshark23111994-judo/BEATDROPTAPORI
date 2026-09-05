@@ -10,20 +10,23 @@
 
     <div id="game-container">
         <h1>🎵 BEAT DROP: TAPORI TAKEOVER 🎵</h1>
-        <div id="score-board">Score: <span id="score">0</span></div>
+        <div id="stats">
+            <div>Score: <span id="score">0</span></div>
+            <div>Lives: <span id="lives">❤️❤️❤️</span></div>
+        </div>
         
         <div id="stage">
             <div id="enemy" class="idle">🕺</div>
+            <div id="effect-text"></div>
         </div>
 
         <div id="controls">
-            <button id="tap-btn" onclick="tapAction()">TAP ON BEAT! 🔥</button>
+            <button id="tap-btn" onclick="tapAction()">HIT ON BEAT! 🔥</button>
         </div>
         
-        <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto"></audio>
+        <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto" loop></audio>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
